@@ -7,3 +7,6 @@
 [submodule "microservices/billing-service"]
 	path = microservices/billing-service
 	url = https://github.com/rhafaelcosta/commerce-billing-service.git
+[submodule "microservices/product-catalog-service"]
+	path = microservices/product-catalog-service
+	url = https://github.com/rhafaelcosta/commerce-product-catalog-service.git
