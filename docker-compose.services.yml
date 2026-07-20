@@ -1,0 +1,34 @@
+include:
+    - docker-compose.tools.yml
+
+services:
+
+    commerce-order-service:
+        image: commerce/order-service:dev
+        restart: no
+        ports:
+            - 8080:8080
+        depends_on:
+            commerce-postgres:
+                condition: service_healthy
+        deploy:
+            resources:
+                limits:
+                    memory: 256M
+        environment:
+            SPRING_PROFILES_ACTIVE: docker
+
+    commerce-billing-service:
+        image: commerce/billing-service:dev
+        restart: no
+        ports:
+            - 8082:8082
+        depends_on:
+            commerce-postgres:
+                condition: service_healthy
+        deploy:
+            resources:
+                limits:
+                    memory: 256M
+        environment:
+            SPRING_PROFILES_ACTIVE: docker

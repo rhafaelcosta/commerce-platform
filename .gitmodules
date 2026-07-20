@@ -1,12 +1,20 @@
 [submodule "microservices/order-service"]
 	path = microservices/order-service
 	url = https://github.com/rhafaelcosta/commerce-order-service.git
+	branch = main
 [submodule "docs"]
 	path = docs
 	url = https://github.com/rhafaelcosta/commerce-docs.git
+	branch = main
 [submodule "microservices/billing-service"]
 	path = microservices/billing-service
 	url = https://github.com/rhafaelcosta/commerce-billing-service.git
+	branch = main
 [submodule "microservices/product-catalog-service"]
 	path = microservices/product-catalog-service
 	url = https://github.com/rhafaelcosta/commerce-product-catalog-service.git
+	branch = main
+[submodule "template"]
+	path = template
+	url = https://github.com/rhafaelcosta/-commerce-template.git
+	branch = main
